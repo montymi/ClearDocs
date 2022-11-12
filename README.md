@@ -249,7 +249,7 @@ See the [open issues](https://github.com/montymi/ClearDocs/issues) for a full li
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are, in my opinion, the greatest part of OSS and is what will be the key to continuing the growth of the community. One of the main goals of this README is to make contributing a lot easier for potential developers. In this section, be sure to layout any coding styling choices that you may have so that the source code can remain as uniform as possible. One such project that has an incredible contributions page is *htop* by [htop-dev](https://github.com/htop-dev/htop) who point all potential incoming contributors to their [style guide](https://github.com/htop-dev/htop/blob/main/docs/styleguide.md)
+Contributions are, in my opinion, the greatest part of OSS and is what will be the key to continuing the growth of the community. One of the main goals of this README is to make contributing a lot easier for potential developers. In this section, developers must be sure to layout any coding styling choices that you may have so that the source code can remain as uniform as possible. One such project that has an incredible contributions page is *htop* by [htop-dev](https://github.com/htop-dev/htop) who point all potential incoming contributors to their [style guide](https://github.com/htop-dev/htop/blob/main/docs/styleguide.md)
 
 1. [Fork the Project](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
