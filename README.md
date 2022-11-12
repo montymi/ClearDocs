@@ -55,6 +55,10 @@
 
 
 <!-- ABOUT THE PROJECT -->
+## Problem Statement
+
+Open-source software has an extremely high barrier of entry due to the disorganization of source code which stems from a lack of verbose and clean documentation. For this project, I will create a brief article in Github along with very basic example diagrams and documentation to argue that the current state of OSS's documentation is not acceptable until a method of tracking and portraying project information is universally accepted within the open-source community. 
+
 ## About The Project
 
 The Open Source Software (OSS) community is the backbone of countless businesses around the world, with more than 50% of Fortune 500 companies relying on it in their workflow. That number is set to continue to grow as more open source projects advance and gain traction in the work force, which will only happen with consistent feature implementation. In a study done by Ravi Sen, Siddhartha S. Singh, and Sharad Borle, it was found that "an increase in the number of developers by 10 leads to a 5.65% increase in the average number of subscribers." As is evident by the statistic, there is a direct correlation to the number of workers on a project and the number of users/subscribers to the service that is being created. 
