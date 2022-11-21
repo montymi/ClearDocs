@@ -57,13 +57,13 @@
 <!-- ABOUT THE PROJECT -->
 ## Problem Statement
 
-Open-source software has an extremely high barrier of entry due to the disorganization of source code which stems from a lack of verbose and clean documentation. For this project, I will create a brief article in Github along with very basic example diagrams and documentation to argue that the current state of OSS's documentation is not acceptable until a method of tracking and portraying project information is universally accepted within the open-source community. 
+Open-source software has a high barrier of entry due to source code disorganization caused mainly by a lack of structured documentation. For this project, I will create a brief GitHub README file to decpit an ideal version of the file and argue that the current state of OSS's documentation is not acceptable. OSS documentation must find a method of tracking and portraying project information that is universally accepted within the open-source community. 
 
 ## About The Project
 
-The Open Source Software (OSS) community is the backbone of countless businesses around the world, with more than 50% of Fortune 500 companies relying on it in their workflow. That number is set to continue to grow as more open source projects advance and gain traction in the work force, which will only happen with consistent feature implementation. In a study done by Ravi Sen, Siddhartha S. Singh, and Sharad Borle, it was found that "an increase in the number of developers by 10 leads to a 5.65% increase in the average number of subscribers." As is evident by the statistic, there is a direct correlation to the number of workers on a project and the number of users/subscribers to the service that is being created. 
+The Open Source Software (OSS) community is the backbone of countless businesses around the world, with more than 50% of Fortune 500 companies relying on it in their workflow. That number is set to grow as more open source projects advance and gain traction in the work force, but this will only happen with consistent feature implementation. Increased demand in new features is difficult to match without a subsequent increase in developers. In a study done by Ravi Sen, Siddhartha S. Singh, and Sharad Borle, it was found that "an increase in the number of developers by 10 leads to a 5.65% increase in the average number of subscribers." As evident by the statistic, there is a direct correlation to the number of workers on a project and the number of users/subscribers to the service that is being created. 
 
-This would lead you to believe that the OSS community should be doing everything in its power to lower the projects barrier of entry and welcome edits and suggestions from the community, which is the main goal of OSS. However, not only is this not a priority, but structural documentation is usually omitted altogether, with only 5.4% of 2000 projects investigated in a 2014 study having any sort of architecture documentation.
+This would lead you to believe that the OSS community should be doing everything in its power to lower the projects barrier of entry and welcome edits and suggestions from the community, which is the main goal of OSS. However, not only is this not a priority, but structural documentation is usually omitted altogether, with only 5.4% of 2000 projects investigated in a 2014 study having any sort of architectural documentation. 
 
 Documentation must serve to guide a user or possible developer through the project's intended use case as well as the current workflow and future plans. It isn't enough to just have a brief explanation of the project and an installation guide with a few use case examples. Outside developers must be able to quickly navigate the source code and pick up on the tasks that are waiting to be completed. Users should have a sense of the future plans for the project as well as a clear means of communicating with the current developers. 
 
@@ -75,7 +75,7 @@ This README hopes to serve as a template for what documentation should look like
 
 ### Built With
 
-List the major libraries used in the project, this will help with filtering search results as well as allowing a developer to quickly see if a library they are well-versed in is a part of the project. Leave any add-ons/plugins for the acknowledgements section.
+By listing the major libraries used in the project, the project will show up in filtered search results for any library listed. The list also allows a developer to quickly see if a library they are well-versed in is a part of the project.
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
@@ -93,7 +93,7 @@ List the major libraries used in the project, this will help with filtering sear
 <!-- GETTING STARTED -->
 ## Getting Started
 
-*Here is an example of installation instructions by one of the largest Python projects on GitHub: **cpython**.*
+*Here is an example of installation instructions by one of the largest Python projects on GitHub: [cpython](https://github.com/python/cpython).*
 
 On Unix, Linux, BSD, macOS, and Cygwin:
 
@@ -230,8 +230,7 @@ $ weather -l "Manhattan Beach, CA"
 As is stated above, less than 6% of GitHub projects include documentation or diagrams about the software's architecture. Since larger projects can often have a very convoluted source code structure, diagrams are the ideal method of displaying the flow of the project. 
 
 *Here is an example given by the official [PlantUML](https://github.com/plantuml-stdlib/C4-PlantUML) GitHub page which utilizes both graphical and verbal descriptions to portray the workflow of a web application.*
-
-<img align="center" width="830" alt="Example software architecture drawn via PlantUML" src="https://user-images.githubusercontent.com/84359773/201444996-30331b8e-69c2-4440-bf0b-a79610282772.png">
+<div align="center"><img width="830" alt="Example software architecture drawn via PlantUML" src="https://user-images.githubusercontent.com/84359773/201444996-30331b8e-69c2-4440-bf0b-a79610282772.png"></div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,9 +239,9 @@ As is stated above, less than 6% of GitHub projects include documentation or dia
 
 By publicly displaying the to-do list of the project, it helps users to see any feature that is nearing implementation. The list also allows new developers to quickly find potential tasks for them to complete which is a wonderful way to get them familiarized with the source code and continuing to make commits.
 
-- [ ] Add Multi-Language Support
-- [ ] Add Additional Structural Templates w/ Examples
-- [ ] Add Example Project to Repository
+- [ ] Emphasize 5.4% of projects section (speculation about what the observable differences would be if it were a higher figure)
+- [ ] Fix "Built With" logos section
+- [ ] Revision at the sentence level
 
 See the [open issues](https://github.com/montymi/ClearDocs/issues) for a full list of issues and proposed features.
 
@@ -316,7 +315,7 @@ Use this space to list any resources used or that may be helpful in understandin
 [license-shield]: https://img.shields.io/github/license/montymi/ClearDocs.svg?style=for-the-badge
 [license-url]: https://github.com/montymi/ClearDocs/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/montymi
+[linkedin-url]: https://linkedin.com/in/michael-montanaro
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
