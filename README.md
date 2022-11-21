@@ -52,7 +52,16 @@
   </ol>
 </details>
 
+<!-- AUTHOR'S NOTE (TEMPORARY) -->
+## Author's Note
 
+I really appreciated the thoughtful and specific feedback given to me by Professor Nardone and my peer, Samuel Platzman, especially since I found myself struggling with the writing in this project. Their advice helped guide me through the review stage of this paper and find a balance between article and documentation writing, ultimately strengthening my argument and leading to the final draft of this project, of which I am far prouder. 
+
+Both reviewers discussed sentence structure in their review notes as they tried to help me strengthen my message while reducing wordiness. Samuel mentioned extrapolating further on one of my examples, but since I did the majority of analysis on the statistic it was written, I simply rewrote the paragraph for better flow. The issue of sentence organization/flow seemed to be a trend throughout as that is also what Professor Nardone suggested to take a look into for the review processes, which I completely agree with since I had been struggling to figure out how best to write an article that I was also trying to use as example documentation. I felt like my draft did a poor job of utilizing effective and clear sentences to further emphasize the importance of improving documentation. This had to be the biggest challenge between the draft and the final because adding too many examples would just turn it into my Project 2 paper and would take away from the “guideline” portion of the project. One such suggestion that greatly helped was to minimize wordiness so that the article became less like a paper and maintained the “guideline” feel while still allowing for it to contain examples for emphasis on the problem statement. 
+
+Additionally, Samuel had also made a suggestion about the coding documentation examples used in the article and how it would become a “How-To” for beginners if it had examples from material used at the beginning of many programmers journeys. I agree to an extent and was hoping to continue working on this project in the future by adding a mini beginner sample project to the repository and use examples from that project. He also mentioned that the logos in the "Built With" section were not loading, which sadly I am not able to fix on the PDF, but they load on the GitHub site. 
+
+With the changes suggested to me, I am extremely proud of this project and I honestly had/have not been this excited to work on any class assignment since high school. Lastly, I just wanted to thank Professor Nardone for urging me to change my Project 2 topic, which ultimately led to this README project. 
 
 <!-- ABOUT THE PROJECT -->
 ## Problem Statement
@@ -63,7 +72,7 @@ Open-source software has a high barrier of entry due to source code disorganizat
 
 The Open Source Software (OSS) community is the backbone of countless businesses around the world, with more than 50% of Fortune 500 companies relying on it in their workflow. That number is set to grow as more open source projects advance and gain traction in the work force, but this will only happen with consistent feature implementation. Increased demand in new features is difficult to match without a subsequent increase in developers. In a study done by Ravi Sen, Siddhartha S. Singh, and Sharad Borle, it was found that "an increase in the number of developers by 10 leads to a 5.65% increase in the average number of subscribers." As evident by the statistic, there is a direct correlation to the number of workers on a project and the number of users/subscribers to the service that is being created. 
 
-This would lead you to believe that the OSS community should be doing everything in its power to lower the projects barrier of entry and welcome edits and suggestions from the community, which is the main goal of OSS. However, not only is this not a priority, but structural documentation is usually omitted altogether, with only 5.4% of 2000 projects investigated in a 2014 study having any sort of architectural documentation. 
+This would lead you to believe that the OSS community should be doing everything in its power to lower the projects barrier of entry and welcome edits and suggestions from the community, which is the main goal of OSS. However, not only is this not a priority, but structural documentation is usually omitted altogether, with only 5.4% of 2000 projects investigated in a 2014 study having any sort of architectural documentation. Many open source projects have already grown to enormous proportions, but it isn't difficult to say that if a higher percentage of projets put an emphasis on software architecture documentation, the community and countless other lesser-known projects would be thriving. 
 
 Documentation must serve to guide a user or possible developer through the project's intended use case as well as the current workflow and future plans. It isn't enough to just have a brief explanation of the project and an installation guide with a few use case examples. Outside developers must be able to quickly navigate the source code and pick up on the tasks that are waiting to be completed. Users should have a sense of the future plans for the project as well as a clear means of communicating with the current developers. 
 
@@ -75,7 +84,7 @@ This README hopes to serve as a template for what documentation should look like
 
 ### Built With
 
-By listing the major libraries used in the project, the project will show up in filtered search results for any library listed. The list also allows a developer to quickly see if a library they are well-versed in is a part of the project.
+By listing the major libraries used in the project, the project will show up in filtered search results for any library listed. The list also allows a developer to quickly see if a library they are well-versed in is a part of the project. Check the "Mardown Links and Images" section of the HTML version of this file to see how these logo-url's are created.
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
@@ -93,7 +102,7 @@ By listing the major libraries used in the project, the project will show up in 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-*Here is an example of installation instructions by one of the largest Python projects on GitHub: [cpython](https://github.com/python/cpython).*
+*Here is an example of installation instructions by one of the largest Python projects on GitHub: [cpython](https://github.com/python/cpython). This section should walk through installation on various operating systems as well as any installation options. The readability of this section will make or break whether someone will use the project, since this section is often the most looked at section (only behind the [About the Project](#about-the-project) section).*
 
 On Unix, Linux, BSD, macOS, and Cygwin:
 
@@ -239,9 +248,14 @@ As is stated above, less than 6% of GitHub projects include documentation or dia
 
 By publicly displaying the to-do list of the project, it helps users to see any feature that is nearing implementation. The list also allows new developers to quickly find potential tasks for them to complete which is a wonderful way to get them familiarized with the source code and continuing to make commits.
 
-- [ ] Emphasize 5.4% of projects section (speculation about what the observable differences would be if it were a higher figure)
-- [ ] Fix "Built With" logos section
+- [X] Emphasize 5.4% of projects section (speculation about what the observable differences would be if it were a higher figure)
+- [X] Fix "Built With" logos section
 - [ ] Revision at the sentence level
+- [X] Center architecture image
+- [X] Add Author's Note
+- [X] Fix some links
+- [ ] Add beginner project to repository
+- [ ] Change code examples to be example project
 
 See the [open issues](https://github.com/montymi/ClearDocs/issues) for a full list of issues and proposed features.
 
