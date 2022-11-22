@@ -250,7 +250,7 @@ By publicly displaying the to-do list of the project, users are able to see any 
 
 - [X] Emphasize 5.4% of projects section (speculation about what the observable differences would be if it were a higher figure)
 - [X] Fix "Built With" logos section
-- [ ] Revision at the sentence level
+- [X] Revision at the sentence level
 - [X] Center architecture image
 - [X] Add Author's Note
 - [X] Fix some links
