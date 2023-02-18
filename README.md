@@ -52,17 +52,6 @@
   </ol>
 </details>
 
-<!-- AUTHOR'S NOTE (TEMPORARY) -->
-## Author's Note
-
-I really appreciated the thoughtful and specific feedback given to me by Professor Nardone and my peer, Samuel Platzman, especially since I found myself struggling with the writing in this project. Their advice helped guide me through the review stage of this paper and find a balance between article and documentation writing, ultimately strengthening my argument and leading to the final draft of this project, of which I am far prouder. 
-
-Both reviewers discussed sentence structure in their review notes as they tried to help me strengthen my message while reducing wordiness. Samuel mentioned extrapolating further on one of my examples, but since I did the majority of analysis on the statistic as written, I simply rewrote the paragraph for better flow. The issue of sentence organization/flow seemed to be a trend throughout, as that is also what Professor Nardone suggested I focus on during the review processes, which I completely agree with since I had been struggling to figure out how best to incorporate an article that I was also trying to use as example documentation. I felt as if my draft did a poor job of utilizing effective and clear sentences to further emphasize the importance of improving documentation. This had to be the biggest challenge between the draft and the final version because adding too many examples would just turn it into my Project 2 paper and would take away from the “guideline” portion of the project. One such suggestion that greatly helped was to minimize wordiness so that the article became less like a paper and maintained the “guideline” feel while still allowing for it to contain examples for emphasis on the problem statement. 
-
-Additionally, Samuel had also made a suggestion about the coding documentation examples used in the article and how the project would become a “How-To” for beginners if it had examples of material used at the beginning of many programmers' journeys. I agree to an extent and was hoping to continue working on this project in the future by adding a mini beginner sample project to the repository and use examples from that project. He also mentioned that the logos in the "Built With" section were not loading, which, unfortunately, I am not able to fix on the PDF, but they load on the GitHub site. 
-
-With the changes suggested to me, I am extremely proud of this project and I honestly had/have not been this excited to work on any class assignment since high school. Lastly, I just wanted to thank Professor Nardone for urging me to change my Project 2 topic, which ultimately led to this README project. 
-
 <!-- ABOUT THE PROJECT -->
 ## Problem Statement
 
