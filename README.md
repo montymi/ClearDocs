@@ -1,35 +1,26 @@
 <div id="readme-top"></div>
 
 <!-- PROJECT SHIELDS -->
+[![Creator][creatorLogo]][creatorProfile]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![GPL License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
+<!-- PROJECT HEADER -->
+# ClearDocs
 
+OSS Documentation Assistant
 
-<!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  <h2 align="center">Reviving OSS Documentation</h2>
 
-  <p align="center">
-    Created by: Michael Montanaro
-    <br />
-    <a href="https://github.com/montymi/ClearDocs"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/montymi/ClearDocs">View Demo</a>
-    ·
-    <a href="https://github.com/montymi/ClearDocs/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/montymi/ClearDocs/issues">Request Feature</a>
-  </p>
+[![🚀 Explore Demo][demoLogo]][demoLogo-url]
+[![🐛 Report Bug][bugLogo]][bugLogo-url]
+[![✨ Request Feature][featureLogo]][featureLogo-url]
+
+  
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -41,8 +32,17 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#installation">Installation</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#setup">Setup</a></li>
+      </ul></li>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#advanced">Advanced</a></li>
+      </ul></li>
+    </li>
     <li><a href="#structure">Structure</a></li>
     <li><a href="#tasks">Tasks</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -53,182 +53,94 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## Problem Statement
-
-Open-source software has a high barrier of entry due to source code disorganization, caused mainly by a lack of structured documentation. For this project, I will create a brief GitHub README file to depict an ideal version of the file and argue that the current state of OSS's documentation is not acceptable. OSS documentation must find a method of tracking and portraying project information that is universally accepted within the open-source community. 
-
 ## About The Project
 
-The Open Source Software (OSS) community is the backbone of countless businesses around the world, with more than 50% of Fortune 500 companies relying on it for their workflow. That number is set to grow as more open source projects advance and gain traction in the work force, but this will only happen with consistent feature implementation. Increased demand in new features is difficult to match without a subsequent increase in developers. In a study done by Ravi Sen, Siddhartha S. Singh, and Sharad Borle, it was found that "an increase in the number of developers by 10 leads to a 5.65% increase in the average number of subscribers." As evidenced by this statistic, there is a direct correlation between the number of workers on a project and the number of users/subscribers to the service that is being created. 
+The Open Source Software (OSS) community underpins countless businesses worldwide, with over 50% of Fortune 500 companies relying on it for their workflows—a number poised to grow as more projects gain traction. However, this growth hinges on consistent feature development, which is challenging without more developers. Research by Ravi Sen, Siddhartha S. Singh, and Sharad Borle found that adding 10 developers to a project increases average subscribers by 5.65%, demonstrating a clear link between developer engagement and user adoption.
 
-This would lead one to believe that the OSS community should be doing everything in its power to lower the projects barrier of entry and welcome edits and suggestions from the community, which is the main goal of OSS. However, not only is this not currently a priority, but also, structural documentation is usually still omitted altogether, with only 5.4% of 2000 projects investigated in a 2014 study having any sort of architectural documentation. Many open source projects have already grown by enormous proportions, but it is not difficult to say that if a higher percentage of projets were to put an emphasis on software architecture documentation, the community and countless other lesser-known projects would thrive. 
+Given this, OSS projects must prioritize lowering barriers to entry and welcoming community contributions—the very ethos of OSS. Unfortunately, this is far from the norm. A 2014 study revealed that only 5.4% of 2,000 projects included architectural documentation, a crucial tool for scaling and collaboration. While many OSS projects have achieved remarkable growth, more widespread emphasis on software architecture documentation could drive success for countless lesser-known initiatives.
 
-Documentation must serve to guide a user or possible developer through the project's intended use case as well as the current workflow and future plans. It isn't enough to simply have a brief explanation of the project and an installation guide with a few use case examples. Outside developers must be able to quickly navigate the source code and pick up on the tasks that are waiting to be completed. Users should have a sense of the future plans for the project as well as a clear means of communicating with the current developers. 
+Effective documentation should guide users and developers through a project’s purpose, workflow, and future direction. A basic overview and installation guide are insufficient; developers need clear navigation of the source code and actionable tasks, while users benefit from insight into future plans and transparent communication channels.
 
-This README hopes to serve as a template for what documentation should look like in order to greatly improve the approachability of OSS projects and encourage more contributions from the community and any newcomer trying to grow as a programmer. 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+This README aims to set a standard for OSS documentation, improving project accessibility and fostering contributions from both the community and aspiring developers.
 
 ### Built With
 
-By listing the major libraries used in the project, the project will show up in filtered search results for any library listed. The list also allows a developer to quickly see if a library in which they are well-versed is a part of the project. Check the "Mardown Links and Images" section of the HTML version of this file to see how these logo-url's are created.
+Listing the major tools and languages used in the project helps it appear in filtered search results for any included library. Additionally, it allows developers to quickly identify whether a library they are proficient in is part of the project. Refer to the "Markdown Links and Images" section of the HTML version of this file to learn how these logo URLs are created.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+[![Python][pythonLogo]][pythonLogo-url]
+[![Markdown][markdownLogo]][markdownLogo-url]
+[![HTML][htmlLogo]][htmlLogo-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Installation
 
-*Here is an example of installation instructions by one of the largest Python projects on GitHub: [cpython](https://github.com/python/cpython). This section should walk through installation on various operating systems as well as any installation options. The readability of this section will make or break whether someone will use the project, since this section is often the most looked at section (only behind the [About the Project](#about-the-project) section).*
+This section should walk through installation on various operating systems as well as any installation options. The readability of this section will make or break whether someone will use the project, since this section is often the most looked at section
 
-On Unix, Linux, BSD, macOS, and Cygwin:
+### Prerequisites
+Ensure you have [git](https://git-scm.com/), [python][pythonLogo-url] (and presumably pip too). Best bet, download the official release for your platform (Operating System) from the provided homepages and their download section. On Windows, your best bet is to use the resulting Git Bash application that will become available after installing git.
 
+Comfirm prerequisites by running the following command:
+```bash
+git --version && python --version && pip --version
 ```
-./configure
-make
-make test
-sudo make install
+
+Download and navigate into the repository:
+```bash
+git clone https://github.com/montymi/ClearDocs/ && cd ClearDocs
 ```
-This will install Python as python3.
 
-You can pass many options to the configure script; run ./configure --help to find out more. On macOS case-insensitive file systems and on Cygwin, the executable is called python.exe; elsewhere it's just python.
+### Setup
 
-Building a complete Python installation requires the use of various additional third-party libraries, depending on your build platform and configure options. Not all standard library modules are buildable or useable on all platforms. Refer to the Install dependencies section of the Developer Guide for current detailed information on dependencies for various Linux distributions and macOS.
-
-On macOS, there are additional configure and build options related to macOS framework and universal builds. Refer to Mac/README.rst.
-
-On Windows, see PCbuild/readme.txt.
-
-If you wish, you can create a subdirectory and invoke configure from there. For example:
-
-```
-mkdir debug
-cd debug
-../configure --with-pydebug
-make
-make test
-```
-(This will fail if you also built at the top-level directory. You should do a make clean at the top-level first.)
+Convert contents of README.md to the raw form, copy file and paste into your project. (Boring ik, that is a WIP for after the holidays 😊.)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 Users are much more likely to use and test a project if they can quickly determine how best to use the software and whether or not it really is what they are looking for. Clear usage examples also give incoming developers a chance to better understand the code and its intended use.
 
-*Here is an example from a project for getting the weather via CLI by [genuinetools](https://github.com/genuinetools)*
+*Here is an example from this project that hopefully won't stand for very long:*
 
-```
-# get the current weather in your current location
-$ weather
+### Getting Started
 
-# change the units to metric
-$ weather -l "Paris, France" -u si
+Manually convert the section information to fit project, including the URLs for tools, tests, and contact cards which need to be found, added, and called. 
 
-# it will auto guess the units though so changing
-# the location to paris will change the units to `si`
-$ weather -l "Paris, France"
+### Advanced
 
-# get three days forecast for NY
-$ weather -l 10028 -d 3
-
-# or you can autolocate and get three days forecast
-$ weather -d 3
-
-# get the weather in Manhattan Beach, CA
-# even includes alerts
-$ weather -l "Manhattan Beach, CA"
-#                             .;odc
-#                           ;kXNNNO
-#                         .0NNO0NN:
-#                        'XNK; dNNl
-#                        KNX'  'XNK.
-#                       ,NNk    cXNK,
-#                       ,NNk     '0NNO:.
-#                     .'cXNXl;,.   ,xXNNKOxxxk0Xx
-#                 'lOXNNNNNNNNNNXOo'  ':oxkOXNNXc
-#               cKNNKd:'.    ..;d0NNKl    ,xXNK,
-#        .;:cclKNXd.              .oXNXxOXNNXl
-#    .cOXNNNNNNNO.                  .kNNNNNNNXOc.
-#   lXNXx;.    .                      .    .;dXNXo
-#  ONNd.                                       oXN0.
-# dNNo                                          cNNk
-# XNN.                                           NNX
-# 0NN'                                          .NNK
-# ;XN0.                                        .ONNc
-#  ;XNXo.                                    .lXNX:
-#   .oXNX0dlcclx0Xo.              .oXKxlccldOXNXd.
-#      ,lk0KXXK0xKNN0o;..    ..;o0NNKx0KXXX0ko,
-#                 'lOXNNNNNNNNNNXOo,
-#                     :x0XNNX0x:.
-#
-#
-# Current weather is Partly Cloudy in Manhattan Beach in California for July 14 at 4:14am EDT
-# The temperature is 69.2°F, but it feels like 69.2°F
-#
-# Special Weather Statement for Los Angeles, CA
-# ...THREAT OF MONSOONAL THUNDERSTORMS LATE TONIGHT THROUGH WEDNESDAY...
-# A STRONG UPPER LEVEL HIGH PRESSURE SYSTEM CURRENTLY CENTERED OVER NEVADA
-# WILL BRING INCREASING EAST TO SOUTHEAST FLOW OVER SOUTHERN
-# CALIFORNIA. AS A RESULT...A SIGNIFICANT SURGE OF MONSOONAL MOISTURE
-# WILL MOVE INTO SOUTHWEST CALIFORNIA LATE TONIGHT THROUGH WEDNESDAY.
-# THE GREATEST THREAT OF SHOWERS AND THUNDERSTORMS WILL BE ACROSS THE
-# MOUNTAINS AND ANTELOPE VALLEY LATE TONIGHT INTO TUESDAY. DUE TO THE
-# EASTERLY UPPER LEVEL FLOW ON MONDAY...THERE WILL ALSO BE A SLIGHT
-# CHANCE OF SHOWERS AND THUNDERSTORMS ACROSS MOST COASTAL AND VALLEY
-# AREAS.
-# THE DEEPER MONSOONAL MOISTURE WILL BRING THE POTENTIAL FOR BRIEF HEAVY
-# RAINFALL WITH STORMS THAT DEVELOP ON MONDAY AND TUESDAY...ESPECIALLY
-# ACROSS THE MOUNTAINS AND ANTELOPE VALLEY. WHILE STORMS ARE EXPECTED
-# TO BE FAST MOVING...THERE WILL BE THE POTENTIAL FOR LOCALIZED FLOODING
-# OF ROADWAYS AND ARROYOS. ON TUESDAY...THE THREAT OF THUNDERSTORMS IS
-# EXPECTED TO REMAIN CONFINED TO THE MOUNTAINS AND DESERTS. WITH WEAKER
-# UPPER LEVEL WINDS ON TUESDAY...STORMS WILL LIKELY MOVE SLOWER. AS A
-# RESULT...THERE WILL BE AN INCREASED THREAT OF FLASH FLOODING.
-# IT WILL NOT BE AS HOT ACROSS MUCH OF THE REGION TOMORROW DUE TO THE
-# INCREASED MOISTURE AND CLOUD COVERAGE...WITH INTERIOR SECTIONS
-# GENERALLY REMAINING IN THE 90S. HOWEVER...THERE WILL BE A
-# SIGNIFICANT INCREASE IN HUMIDITY ON MONDAY THAT WILL CONTINUE TO
-# BRING DISCOMFORT.
-# ANYONE PLANNING OUTDOOR ACTIVITIES IN THE MOUNTAINS AND DESERTS
-# DURING THE NEXT FEW DAYS SHOULD CAREFULLY MONITOR THE LATEST
-# NATIONAL WEATHER SERVICE FORECASTS AND STATEMENTS DUE TO THE
-# POTENTIAL HAZARDS ASSOCIATED WITH THUNDERSTORMS.
-#             Created: July 13 at 10:50pm EDT
-#             Expires: July 14 at 7:00pm EDT
-#
-# Ick! The humidity is 85%
-# The nearest storm is 18 miles NE away
-# The wind speed is 3.96 mph SE
-# The cloud coverage is 35%
-# The visibility is 9.58 miles
-# The pressure is 1012.99 mbar
-```
+TODO; Check [Tasks](#tasks) for updates coming soon!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- STRUCTURE -->
 ## Structure
 
-As stated above, less than 6% of GitHub projects include documentation or diagrams about the software's architecture. Since larger projects can often have a very convoluted source code structure, diagrams are the ideal method of displaying the flow of the project. 
+Less than 6% of GitHub projects include documentation or diagrams about the software's architecture. Since larger projects can often have a very convoluted source code structure, diagrams are the ideal method of displaying the flow of the project. 
 
-*Here is an example given by the official [PlantUML](https://github.com/plantuml-stdlib/C4-PlantUML) GitHub page which utilizes both graphical and verbal descriptions to portray the workflow of a web application.*
-<div align="center"><img width="830" alt="Example software architecture drawn via PlantUML" src="https://user-images.githubusercontent.com/84359773/201444996-30331b8e-69c2-4440-bf0b-a79610282772.png"></div>
+```
+ClearDocs
+├── README.md
+├── src
+│   ├── __init__.py
+│   ├── cli.py
+│   └── utils.py
+└── docs
+    ├── index.md
+    ├── installation.md
+    ├── usage.md
+    ├── configuration.md
+    ├── contributing.md
+    ├── api
+    │   └── overview.md
+    ├── tutorials
+    │   ├── getting_started.md
+    │   └── advanced_features.md
+    └── references
+        ├── glossary.md
+        └── faq.md
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -243,14 +155,15 @@ By publicly displaying the to-do list of the project, users are able to see any 
 - [X] Center architecture image
 - [X] Add Author's Note
 - [X] Fix some links
-- [ ] Add beginner project to repository
-- [ ] Change code examples to be example project
+- [X] Change code examples to be ClearDocs project
+- [ ] Add CLI capabilities for README creation
+- [ ] Improve CLI with docs/ folder
+- [ ] Automate deployment to gh-pages through CLI
+- [ ] package and post to PIP
 
 See the [open issues](https://github.com/montymi/ClearDocs/issues) for a full list of issues and proposed features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -265,8 +178,6 @@ Contributions are, in my opinion, the greatest part of OSS and are what will be 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
 ## License
 
@@ -274,20 +185,7 @@ Contributions are, in my opinion, the greatest part of OSS and are what will be 
 
 Distributed under the GPL-3.0 License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Michael Montanaro - [LinkedIn](https://www.linkedin.com/in/michael-montanaro/) - montanaro.m@northeastern.edu
-
-Project Link: [https://github.com/montymi/ClearDocs](https://github.com/montymi/ClearDocs)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+<br />
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
@@ -303,10 +201,22 @@ Use this space to list any resources used or that may be helpful in understandin
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[demoLogo]: https://img.shields.io/badge/🚀%20Explore%20Demo-grey?style=for-the-badge
+[demoLogo-url]: https://github.com/montymi/ClearDocs
+[bugLogo]: https://img.shields.io/badge/🐛%20Report%20Bug-grey?style=for-the-badge
+[bugLogo-url]: https://github.com/montymi/ClearDocs/issues
+[featureLogo]: https://img.shields.io/badge/✨%20Request%20Feature-grey?style=for-the-badge
+[featureLogo-url]: https://github.com/montymi/ClearDocs/issues
+[pythonLogo]: https://img.shields.io/badge/Python-black?style=for-the-badge&logo=python&logoColor=natural
+[pythonLogo-url]: https://python.org/
+[markdownLogo]: https://img.shields.io/badge/Markdown-black?style=for-the-badge&logo=markdown&logoColor=natural
+[markdownLogo-url]: https://daringfireball.net/projects/markdown/
+[htmlLogo]: https://img.shields.io/badge/HTML5-black?style=for-the-badge&logo=html5&logoColor=natural
+[htmlLogo-url]: https://html.spec.whatwg.org/
+[creatorLogo]: https://img.shields.io/badge/-Created%20by%20montymi-maroon.svg?style=for-the-badge
+[creatorProfile]: https://montymi.com/
 [contributors-shield]: https://img.shields.io/github/contributors/montymi/ClearDocs.svg?style=for-the-badge
 [contributors-url]: https://github.com/montymi/ClearDocs/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/montymi/ClearDocs.svg?style=for-the-badge
