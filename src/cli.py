@@ -1,24 +1,23 @@
 import os
 import click
-from utils import create_readme, create_docs_index, deploy_to_github_pages
+from utils import Project
 
 @click.command()
 @click.option('--project-name', prompt='Project name', help='The name of your project.')
 @click.option('--description', prompt='Project description', help='A brief description of your project.')
 @click.option('--author', prompt='Your name', help='Your name for the documentation.')
-def initialize(project_name, description, author):
+@click.option('--deploy', is_flag=True, help='Deploy the documentation to GitHub Pages.')
+def initialize(project_name: str, description: str, author: str, deploy: bool):
     """Initialize the project documentation and setup."""
-    # Create README.md
-    create_readme(project_name, description, author)
 
-    # Create docs folder and index.md
-    create_docs_index(project_name, description)
+    try:
+        project = Project(project_name, description, author, deploy)
+        project.execute("initialize")
 
-    # Link project with documentation
-    click.echo(f'Project "{project_name}" documentation initialized.')
-
-    # Deploy to GitHub Pages
-    deploy_to_github_pages(project_name)
+        click.echo(f'Project documentation successfully initialized for {project}.')
+    except Exception as e:
+        click.echo(f'An error occurred: {e}')
+        return
 
 if __name__ == '__main__':
     initialize()
