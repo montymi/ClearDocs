@@ -3,20 +3,18 @@ import click
 from utils import Project
 
 @click.command()
-@click.option('--project-name', prompt='Project name', help='The name of your project.')
-@click.option('--description', prompt='Project description', help='A brief description of your project.')
-@click.option('--author', prompt='Your name', help='Your name for the documentation.')
-@click.option('--deploy', is_flag=True, help='Deploy the documentation to GitHub Pages.')
-def initialize(project_name: str, description: str, author: str, deploy: bool):
+@click.option('--file', default='docconfig.yml', help='The configuration file for the project documentation.')
+@click.option('--deploy', is_flag=True, help='Deploy the project documentation to a remote server.')
+def initialize(file: str= 'docconfig.yml', deploy: bool = False):
     """Initialize the project documentation and setup."""
 
     try:
-        project = Project(project_name, description, author, deploy)
+        project = Project(file, deploy)
         project.execute("initialize")
 
         click.echo(f'Project documentation successfully initialized for {project}.')
     except Exception as e:
-        click.echo(f'An error occurred: {e}')
+        click.echo(f'An error occurred from call: {e}')
         return
 
 if __name__ == '__main__':
