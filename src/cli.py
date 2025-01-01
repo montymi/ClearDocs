@@ -1,6 +1,6 @@
 import os
 import click
-from utils import Project
+from utils.models import Project
 
 @click.command()
 @click.option('--file', default='docconfig.yml', help='The configuration file for the project documentation.')

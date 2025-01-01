@@ -69,7 +69,7 @@ class TomlNavigator:
             raise TypeError('Current element is not a dictionary.')
     
     def display_current_key(self):
-        print(self.current_path)
+        pprint(self.current_path)
 
 # Example usage
 if __name__ == '__main__':
