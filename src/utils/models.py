@@ -1,8 +1,10 @@
 import click
-import yaml
+import toml
 import os
 import subprocess
 import mistune
+
+from utils import MarkdownConverter
 
 def search(config: list, key: tuple):
     for item in config:
@@ -284,19 +286,18 @@ class Project:
 
     def load_config(self):
         if not os.path.exists(self.file):
-            default_template_path = os.path.join(os.path.dirname(__file__), 'docconfig.yml')
-            import pdb; pdb.set_trace()
+            default_template_path = os.path.join(os.path.dirname(__file__), '../docconfig.toml')
             if os.path.exists(default_template_path):
                 with open(default_template_path, 'r') as f:
-                    template = yaml.safe_load(f) or {}
+                    template = toml.load(f) or {}
                     with open(self.file, 'w') as f:
-                        yaml.dump(template, f)
+                        toml.dump(template, f)
                     return template
             else:
                 raise Exception(f'Default template not found at {default_template_path}')
         try:
             with open(self.file, 'r+') as f:
-                return yaml.safe_load(f) or {}
+                return toml.load(f) or {}
         except Exception as e:
             raise Exception(f'An error occurred while loading the configuration file: {e}')
 
@@ -333,19 +334,22 @@ class Readme:
     def set_actions(self):
         return {'initialize': self._create_readme}
     
-    def _create_readme(self, project_name, description, author):
-        markdown = mistune.create_markdown()
-        content = f"# {project_name}\n\n" \
-                  f"\nCreated by: {author}\n\n" \
-                  f"## Description\n{description}\n\n" \
-                  "## Installation\n\n" \
-                  "## Usage\n\n"
-        with open('README.md', 'w') as f:
-            f.write(markdown(content))
+    def _create_readme(self):
+        import pdb; pdb.set_trace()
+        if os.path.exists('README.md'):
+            if not click.confirm('README.md already exists. Overwrite?', abort=True):
+                return
+        try:
+            converter = MarkdownConverter('docconfig.yml')        
+            markdown_content = converter.convert_to_markdown()
+            with open('README.md', 'w') as f:
+                f.write(markdown_content)
+        except Exception as e:
+            raise Exception(f'An error occurred while creating the README: {e}')
 
     def execute(self, action):
         if action in self.actions:
-            self.actions[action](self.project_name, self.description, self.author)
+            self.actions[action]()
 
 class Docs: 
     def __init__(self, config):

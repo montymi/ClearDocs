@@ -5,6 +5,7 @@ class MarkdownConverter:
     def __init__(self, toml_file):
         self.toml_file = toml_file
         self.data = self.load_toml()
+        self.renderer = mistune.create_markdown()
 
     def load_toml(self):
         try:
@@ -41,10 +42,11 @@ class MarkdownConverter:
 
     def save_markdown(self, output_file):
         markdown_content = self.convert_to_markdown()
+        mdx_content = self.renderer(markdown_content)
         with open(output_file, 'w') as file:
-            file.write(markdown_content)
+            file.write(mdx_content)
 
 # Example usage
 if __name__ == '__main__':
     converter = MarkdownConverter('docconfig.toml')
-    converter.save_markdown('README.md')
+    converter.save_markdown('README.mdx')
