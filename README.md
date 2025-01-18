@@ -235,7 +235,7 @@ Use this space to list any resources used or that may be helpful in understandin
 [issues-url]: https://github.com/montymi/ClearDocs/issues
 [license-shield]: https://img.shields.io/github/license/montymi/ClearDocs.svg?style=for-the-badge
 [license-url]: https://github.com/montymi/ClearDocs/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin
+[linkedin-shield]: https://cdn-icons-png.flaticon.com/512/174/174857.png
 [linkedin-url]: https://linkedin.com/in/michael-montanaro
 [github-shield]: https://img.shields.io/badge/-GitHub-black.svg?style=for-the-badge&logo=github
 [github-url]: https://github.com/montymi
