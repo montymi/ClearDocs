@@ -11,7 +11,7 @@
 <!-- PROJECT HEADER -->
 # ClearDocs
 
-OSS Documentation Assistant
+OSS Documentation Assistant. Dynamically create README and docs for your projects. 
 
 <!-- CALL TO ACTIONS -->
 [![🚀 Explore Demo][demoLogo]][demoLogo-url]
