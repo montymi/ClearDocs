@@ -190,8 +190,17 @@ Distributed under the GPL-3.0 License. See `LICENSE.txt` for more information.
 
 Michael Montanaro
 
-[![LinkedIn][linkedin-shield]][linkedin-url] 
-[![GitHub][github-shield]][github-url]
+[linkedin-shield]: https://cdn-icons-png.flaticon.com/512/174/174857.png
+[github-shield]: https://cdn-icons-png.flaticon.com/512/733/733553.png
+[linkedin-url]: https://linkedin.com/in/michael-montanaro
+[github-url]: https://github.com/montymi
+
+<a href="https://linkedin.com/in/michael-montanaro/" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20" height="20" />
+</a>
+<a href="https://github.com/montymi/" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20" height="20" />
+</a>
 
 <br />
 
@@ -235,14 +244,6 @@ Use this space to list any resources used or that may be helpful in understandin
 [issues-url]: https://github.com/montymi/ClearDocs/issues
 [license-shield]: https://img.shields.io/github/license/montymi/ClearDocs.svg?style=for-the-badge
 [license-url]: https://github.com/montymi/ClearDocs/blob/master/LICENSE.txt
-
-[![LinkedIn][linkedin-shield]][linkedin-url]  
-[![GitHub][github-shield]][github-url]
-
-[linkedin-shield]: <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20" height="20">
-[github-shield]: <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20" height="20">
-[linkedin-url]: https://linkedin.com/in/michael-montanaro
-[github-url]: https://github.com/montymi
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
