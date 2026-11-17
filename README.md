@@ -74,7 +74,21 @@ Listing the major tools and languages used in the project helps it appear in fil
 <!-- GETTING STARTED -->
 ## Installation
 
-ClearDocs requires Python 3.10 or newer. From this repository:
+ClearDocs requires Python 3.10 or newer. Install directly from GitHub today:
+
+```bash
+python -m pip install "git+https://github.com/montymi/ClearDocs.git@main"
+cleardocs --help
+```
+
+For a reproducible installation, replace `main` with a release tag or full commit
+SHA. Git must be installed for this installation method.
+
+Once the first release is published to PyPI, installation will also be available
+with `python -m pip install cleardocs`. The PyPI release is not yet published by
+this change.
+
+For local development, from this repository:
 
 ```bash
 python -m venv .venv
@@ -126,6 +140,27 @@ rules still apply. No Terraform or cloud credentials are required.
 
 To host elsewhere, upload the contents of `site/` after `cleardocs build`.
 Custom domains and additional hosting providers are not configured automatically.
+
+### Publishing a release
+
+The release workflow builds a wheel and source distribution, checks their
+metadata, and tests the installed wheel before publishing via PyPI Trusted
+Publishing. No API token is stored in the repository.
+
+Before the first release:
+
+1. On PyPI, configure a pending Trusted Publisher for project `cleardocs`, owner
+   `montymi`, repository `ClearDocs`, workflow `release.yml`, and environment
+   `pypi`. Confirm that the package name is available or owned by you; otherwise
+   choose an available name in `setup.py` and update these instructions and the
+   workflow URL.
+2. Create a GitHub environment named `pypi`; configure any desired release
+   protection rules there.
+3. Set the version in `src/cleardocs/__init__.py`, commit the release changes,
+   and publish a GitHub release with the matching tag, such as `v0.1.0`.
+
+Subsequent releases require a new version and matching tag; PyPI does not allow
+replacing an existing version. A GitHub release starts the publishing workflow.
 
 ### Development
 

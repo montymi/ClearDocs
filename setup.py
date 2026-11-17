@@ -1,12 +1,14 @@
+from pathlib import Path
+import runpy
 from setuptools import setup, find_packages # type: ignore
 
 setup(
     name='cleardocs',
-    version='0.1.0',
+    version=runpy.run_path(str(Path(__file__).parent / 'src/cleardocs/__init__.py'))['__version__'],
     author='montymi',
     author_email='mcmontanaro01@gmail.com',
     description='A CLI tool to initialize project documentation and deploy it to GitHub Pages.',
-    long_description=open('README.md').read(),
+    long_description=(Path(__file__).parent / 'README.md').read_text(encoding='utf-8'),
     long_description_content_type='text/markdown',
     url='https://github.com/montymi/ClearDocs',
     packages=find_packages(where='src'),
