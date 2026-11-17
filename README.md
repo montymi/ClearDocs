@@ -74,43 +74,68 @@ Listing the major tools and languages used in the project helps it appear in fil
 <!-- GETTING STARTED -->
 ## Installation
 
-This section should walk through installation on various operating systems as well as any installation options. The readability of this section will make or break whether someone will use the project, since this section is often the most looked at section
+ClearDocs requires Python 3.10 or newer. From this repository:
 
-### Prerequisites
-Ensure you have [git](https://git-scm.com/), [python][pythonLogo-url] (and presumably pip too). Best bet, download the official release for your platform (Operating System) from the provided homepages and their download section. On Windows, your best bet is to use the resulting Git Bash application that will become available after installing git.
-
-Comfirm prerequisites by running the following command:
 ```bash
-git --version && python --version && pip --version
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+python -m pip install -r requirements.txt
 ```
 
-Download and navigate into the repository:
-```bash
-git clone https://github.com/montymi/ClearDocs/ && cd ClearDocs
-```
-
-### Setup
-
-Convert contents of README.md to the raw form, copy file and paste into your project. (Boring ik, that is a WIP for after the holidays 😊.)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-Users are much more likely to use and test a project if they can quickly determine how best to use the software and whether or not it really is what they are looking for. Clear usage examples also give incoming developers a chance to better understand the code and its intended use.
+Run ClearDocs in the project you want to document:
 
-*Here is an example from this project that hopefully won't stand for very long:*
+```bash
+cleardocs init --template standard --hosting github-pages
+cleardocs serve
+cleardocs build --strict
+```
 
-### Getting Started
+`init` creates a Material for MkDocs site, copies an existing README into
+`docs/index.md`, and creates `requirements-docs.txt`. The standard template also
+includes getting started, configuration, and contributing pages. Use
+`--template minimal` for just the homepage, `--site-name "My Project"` to set the
+title, or pass a target directory: `cleardocs init path/to/project`.
 
-Manually convert the section information to fit project, including the URLs for tools, tests, and contact cards which need to be found, added, and called. 
+Existing scaffold files are protected by default. `--force` explicitly replaces
+conflicting generated files. The original README is never changed by `init`.
+README links and image paths may need adjusting when copied into `docs/`.
+Generated files belong to your project and work directly with MkDocs; ClearDocs
+is not needed to host the resulting site.
 
-### Advanced
+Create a README separately:
 
-TODO; Check [Tasks](#tasks) for updates coming soon!
+```bash
+cleardocs readme --name "My Project" --description "What the project does"
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+An existing README is preserved unless you pass `--force`. Review generated
+placeholder sections before publishing.
+
+### GitHub Pages
+
+`--hosting github-pages` generates `.github/workflows/docs.yml`. In the target
+repository, open **Settings → Pages** and select **GitHub Actions** as the build
+source. Commit and push the generated files to `main`. If your default branch
+has another name, update the workflow branch filter. Pull requests build and
+validate the docs; pushes to `main` and manual workflow runs build and deploy.
+The workflow installs only `requirements-docs.txt`, so the target project does
+not need ClearDocs installed in CI. Any configured GitHub environment protection
+rules still apply. No Terraform or cloud credentials are required.
+
+To host elsewhere, upload the contents of `site/` after `cleardocs build`.
+Custom domains and additional hosting providers are not configured automatically.
+
+### Development
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The suite exercises scaffold protection, README generation, strict MkDocs builds,
+and command failure handling. `cleardocs serve --dev-addr 127.0.0.1:8000` starts
+the preview server. Both `serve` and `build` accept `--config-file path/to/mkdocs.yml`.
 
 <!-- STRUCTURE -->
 ## Structure
@@ -120,24 +145,13 @@ Less than 6% of GitHub projects include documentation or diagrams about the soft
 ```
 ClearDocs
 ├── README.md
-├── src
+├── requirements.txt
+├── setup.py
+├── src/cleardocs
 │   ├── __init__.py
-│   ├── cli.py
-│   └── utils.py
-└── docs
-    ├── index.md
-    ├── installation.md
-    ├── usage.md
-    ├── configuration.md
-    ├── contributing.md
-    ├── api
-    │   └── overview.md
-    ├── tutorials
-    │   ├── getting_started.md
-    │   └── advanced_features.md
-    └── references
-        ├── glossary.md
-        └── faq.md
+│   └── cli.py
+└── tests
+    └── test_cli.py
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -154,9 +168,9 @@ By publicly displaying the to-do list of the project, users are able to see any 
 - [X] Add Author's Note
 - [X] Fix some links
 - [X] Change code examples to be ClearDocs project
-- [ ] Add CLI capabilities for README creation
-- [ ] Improve CLI with docs/ folder
-- [ ] Automate deployment to gh-pages through CLI
+- [X] Add CLI capabilities for README creation
+- [X] Improve CLI with docs/ folder
+- [X] Generate GitHub Pages deployment workflow through CLI
 - [ ] package and post to PIP
 
 See the [open issues](https://github.com/montymi/ClearDocs/issues) for a full list of issues and proposed features.

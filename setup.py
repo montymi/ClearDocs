@@ -11,13 +11,16 @@ setup(
     url='https://github.com/montymi/ClearDocs',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
+    entry_points={'console_scripts': ['cleardocs=cleardocs.cli:main']},
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.10',
     install_requires=[
-        'click',
+        'click>=8.1,<9',
+        'mkdocs==1.6.1',
+        'mkdocs-material==9.6.14',
     ],
 )
